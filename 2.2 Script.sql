@@ -7,7 +7,7 @@ create table if not exists Execut (
 Idexec integer primary key,
 Name varchar(40) not null,
 Idstyle integer not null
-FOREIGN KEY (Idstyle) REFERENCES Execut (Idstyle)
+FOREIGN KEY (Idstyle) REFERENCES Styles (Idstyle)
 );
 
 create table if not exists Albums (
@@ -25,4 +25,3 @@ Length integer not null,
 Idalbum integer not null,
 FOREIGN KEY (Idalbum) REFERENCES Albums (Idalbum)
 );
-
